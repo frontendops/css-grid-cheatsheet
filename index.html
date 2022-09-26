@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1 class="header-heading">CSS Grid Demo</h1>
+        </header>
+
+        <main>
+            <section class="main-card">
+                <h2 class="main-subheading">Standard 12 Column Grid</h2>
+
+                <div class="main-content">
+                    <div class="content-code one-a">
+                        <pre>
+                            <code>
+.item-1 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+}
+                            </code>
+                        </pre>
+                    </div>
+    
+                    <div class="content-code one-b">
+                        <pre>
+                            <code>
+.container {
+    column-gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.item-2 {
+    grid-column-start: 8;
+    grid-column-end: 13;
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>Sources from
+                <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">
+                https://css-tricks.com/snippets/css/complete-guide-grid/</a>
+            </p>
+        </footer>
+    </div>
+    
+</body>
+</html>
