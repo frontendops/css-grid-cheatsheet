@@ -89,3 +89,33 @@ header {
     grid-column-start: 8;
     grid-column-end: 13;
 }
+
+.two {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+}
+
+.two-a,
+.two-c {
+    grid-column: 1 / span 8;
+}
+
+.two-b {
+    grid-column: 9 / span 12;
+    grid-row: 1 / span 2;
+    background-color: #f6f6df;
+    color: #070525;
+}
+
+.three {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(174px, 1fr));
+    font-size: .7rem;
+    row-gap: 1rem;
+}
+
+.three-b {
+    background-color: #f6f6df;
+    color: #070525;
+}
